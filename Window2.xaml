@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfApp1.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        Title="Dodawanie linii" Height="350" Width="700">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Image\bg1.jpg"
+                AlignmentY="Top" AlignmentX="Center"/>
+        </Grid.Background>
+        <Label x:Name="label" Content="Przystanek:" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="label1" Content="Numer pociągu:" HorizontalAlignment="Left" Margin="10,88,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="label2" Content="Godzina odjazdu:" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="label3" Content="Godzina przyjazdu:" HorizontalAlignment="Left" Margin="10,212,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="label4" Content="Peron:" HorizontalAlignment="Left" Margin="159,26,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="label5" Content="Tor:" HorizontalAlignment="Left" Margin="159,88,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="label6" Content="Data:" HorizontalAlignment="Left" Margin="299,26,0,0" VerticalAlignment="Top" FontWeight="Bold" RenderTransformOrigin="-0.35,0.462"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="10,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="10,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="10,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="23" Margin="10,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="23" Margin="159,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox5" HorizontalAlignment="Left" Height="23" Margin="159,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Calendar x:Name="calendar"  HorizontalAlignment="Left" Margin="299,52,0,0" Loaded="calendar_Loaded" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="Dodaj przystanek" HorizontalAlignment="Left" Margin="159,229,0,0" VerticalAlignment="Top" Width="120" Height="32" Click="button_Click"/>
+        <Label x:Name="label7" Content="Dodawanie przystanku:" HorizontalAlignment="Left" Margin="10,4,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.474,0.423" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="label8" Content="Dodawanie pociągu:" HorizontalAlignment="Left" Margin="498,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="label9" Content="Numer:" HorizontalAlignment="Left" Margin="498,26,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="textBox6" HorizontalAlignment="Left" Height="23" Margin="498,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label10" Content="Nazwa:" HorizontalAlignment="Left" Margin="498,88,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="textBox7" HorizontalAlignment="Left" Height="23" Margin="498,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label11" Content="Rodzaj:" HorizontalAlignment="Left" Margin="498,150,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="textBox8" HorizontalAlignment="Left" Height="23" Margin="498,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button1" Content="Dodaj pociąg" HorizontalAlignment="Left" Margin="498,229,0,0" VerticalAlignment="Top" Width="120" Height="32" Click="button1_Click"/>
+    </Grid>
+</Window>
